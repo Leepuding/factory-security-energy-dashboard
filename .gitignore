@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+.vscode/
+
+# Large source/reference assets not required at runtime
+设计元素svg.txt
+public/assets/design-elements.svg
+public/assets/box3.svg
+public/maps/reference-full-dashboard.png
+public/maps/reference-dashboard-underlay.png
+vendor/
