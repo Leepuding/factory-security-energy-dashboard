@@ -13,7 +13,7 @@
       />
     </div>
     <div class="map-stage">
-      <img class="campus-map__base" src="/maps/reference-campus-map.png" alt="智慧工厂园区静态态势图" />
+      <img class="campus-map__base" :src="'./maps/reference-campus-map.png'" alt="智慧工厂园区静态态势图" />
       <MapPoint v-for="point in points" :key="point.label" :point="point" />
       <div class="map-toolbar">
         <button>图层切换</button>
