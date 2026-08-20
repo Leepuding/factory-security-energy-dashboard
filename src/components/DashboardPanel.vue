@@ -14,7 +14,9 @@
         <span class="panel-title-mark"></span>
         <h2>{{ title }}</h2>
       </div>
-      <span>{{ sub }}</span>
+      <button class="panel-detail-trigger" type="button" @click="openDetail">
+        <span>{{ sub }}</span>
+      </button>
     </header>
     <div class="panel-body">
       <slot />
@@ -23,9 +25,21 @@
 </template>
 
 <script setup>
-defineProps({
+import { inject } from "vue";
+
+const emit = defineEmits(["open-detail"]);
+
+const props = defineProps({
   title: { type: String, required: true },
   sub: { type: String, default: "更多 >" },
   className: { type: String, default: "" },
 });
+
+const openPanelDetail = inject("openPanelDetail", null);
+
+function openDetail() {
+  const detail = { title: props.title, sub: props.sub };
+  emit("open-detail", detail);
+  openPanelDetail?.(detail);
+}
 </script>

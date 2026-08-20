@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: document_analysis
+      MYSQL_USER: document_demo
+      MYSQL_PASSWORD: document_demo_local
+      MYSQL_ROOT_PASSWORD: document_root_local
+    ports:
+      - "127.0.0.1:3307:3306"
+    command: ["mysqld", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-udocument_demo", "-pdocument_demo_local"]
+      interval: 5s
+      timeout: 5s
+      retries: 20

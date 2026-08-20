@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="智慧工厂平台数字化应用统一入口" />
+    <title>智慧工厂平台 · 统一应用入口</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="portal-shell">
+      <header class="portal-header">
+        <a class="brand" href="/" aria-label="返回统一应用入口">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 21V9l5 3V9l5 3V4h6v17M4 21h16M8 16h1m4 0h1m4 0h1" /></svg>
+          </span>
+          <span><strong>智慧工厂平台</strong><small>SMART FACTORY PLATFORM</small></span>
+        </a>
+        <div class="header-label">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6v6H4zM14 5h6v6h-6zM4 15h6v4H4zM14 15h6v4h-6z" /></svg>
+          <span>应用工作台</span>
+        </div>
+      </header>
+
+      <main class="portal-main">
+        <section class="system-grid" aria-label="系统入口">
+          <article class="system-card cockpit-card">
+            <div class="system-index">01</div>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <rect x="7" y="10" width="50" height="37" rx="4" />
+                <path d="M23 55h18M32 47v8M16 36V25m8 11v-7m8 7V20m8 16v-4m8 4V17" />
+                <path d="M15 18h11l4 5 7-8 11 4" />
+              </svg>
+            </div>
+            <div class="system-copy">
+              <h2>智慧工厂驾驶舱</h2>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M12 3 4 6v5c0 5 3.4 8.3 8 10 4.6-1.7 8-5 8-10V6l-8-3Z" /><path d="m9 12 2 2 4-5" /></svg>安防态势实时监控</li>
+              <li><svg viewBox="0 0 24 24"><path d="m13 2-8 12h7l-1 8 8-12h-7l1-8Z" /></svg>能源消耗集中管理</li>
+            </ul>
+            <a class="enter-link" data-service="cockpit" href="http://1.13.195.57:28080/">
+              <span>打开驾驶舱</span><svg viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5" /></svg>
+            </a>
+          </article>
+
+          <article class="system-card document-card">
+            <div class="system-index">02</div>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M17 6h22l10 10v42H17z" /><path d="M39 6v11h10M24 27h18M24 35h13M24 43h16" />
+                <circle cx="47" cy="47" r="11" /><path d="M42 51 47 39l5 12M44 47h6" />
+              </svg>
+            </div>
+            <div class="system-copy">
+              <h2>AI 文档分析</h2>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M5 13v7h14v-7" /></svg>多格式文档上传</li>
+              <li><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3" /></svg>智能识别与分析</li>
+            </ul>
+            <a class="enter-link" data-service="document" href="http://1.13.195.57:28080/document-analysis.html">
+              <span>开始资料研判</span><svg viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5" /></svg>
+            </a>
+          </article>
+
+          <article class="system-card quotation-card">
+            <div class="system-index">03</div>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M12 8h32l8 8v39H12zM44 8v10h8" />
+                <path d="M20 26h24M20 42h24M24 22v8M40 22v8M25 37l7-6 7 6-7 7z" />
+                <circle cx="48" cy="48" r="11" /><path d="M43 52 48 40l5 12M45 48h6" />
+              </svg>
+            </div>
+            <div class="system-copy">
+              <h2>非标件 AI 自动报价</h2>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9" /></svg>2D / 3D 图纸识别</li>
+              <li><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M7 8h10M8 13h2m4 0h2m-8 4h2m4 0h2" /></svg>自动核算与报价</li>
+            </ul>
+            <a class="enter-link" href="/quotation/">
+              <span>新建报价任务</span><svg viewBox="0 0 24"><path d="M5 12h13m-5-5 5 5-5 5" /></svg>
+            </a>
+          </article>
+
+          <article class="system-card selector-card">
+            <div class="system-index">04</div>
+            <div class="system-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M10 13h44v38H10zM18 21h12v12H18zM36 21h10M36 27h10M18 41h28" />
+                <path d="m25 25 3 3 7-8M42 36v10M37 41h10" />
+              </svg>
+            </div>
+            <div class="system-copy">
+              <h2>AI 产品介绍平台</h2>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" /></svg>产品图册集中展示</li>
+              <li><svg viewBox="0 0 24 24"><path d="M12 3 9.5 9.5 3 12l6.5 2.5L12 21l2.5-6.5L21 12l-6.5-2.5z" /></svg>AI 工况智能推荐</li>
+            </ul>
+            <a class="enter-link" href="/smart-selector/">
+              <span>进入产品平台</span><svg viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5" /></svg>
+            </a>
+          </article>
+        </section>
+      </main>
+
+    </div>
+    <script src="./portal.js"></script>
+  </body>
+</html>

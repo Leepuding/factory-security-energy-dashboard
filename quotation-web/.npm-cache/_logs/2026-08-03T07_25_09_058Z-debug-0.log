@@ -1,0 +1,19 @@
+0 verbose cli /Users/leepudding/.nvm/versions/node/v24.14.0/bin/node /Users/leepudding/.nvm/versions/node/v24.14.0/bin/npm
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/Users/leepudding/.nvm/versions/node/v24.14.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/leepudding/工作/项目/01_项目库/苍南/西博思工厂/原型/代码原型/quotation-web/.npmrc
+5 silly config load:file:/Users/leepudding/.npmrc
+6 silly config load:file:/Users/leepudding/.nvm/versions/node/v24.14.0/etc/npmrc
+7 verbose title npm run build
+8 verbose argv "run" "build"
+9 verbose logfile logs-max:10 dir:/Users/leepudding/工作/项目/01_项目库/苍南/西博思工厂/原型/代码原型/quotation-web/.npm-cache/_logs/2026-08-03T07_25_09_058Z-
+10 verbose logfile /Users/leepudding/工作/项目/01_项目库/苍南/西博思工厂/原型/代码原型/quotation-web/.npm-cache/_logs/2026-08-03T07_25_09_058Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 verbose cwd /Users/leepudding/工作/项目/01_项目库/苍南/西博思工厂/原型/代码原型/quotation-web
+14 verbose os Darwin 27.0.0
+15 verbose node v24.14.0
+16 verbose npm  v11.9.0
+17 verbose exit 0
+18 info ok

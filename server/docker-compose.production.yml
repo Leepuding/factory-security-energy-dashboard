@@ -1,0 +1,58 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: ai-document-analysis-mysql
+    restart: unless-stopped
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --innodb-buffer-pool-size=128M
+      - --max-connections=30
+    environment:
+      MYSQL_DATABASE: document_analysis
+      MYSQL_USER: document_demo
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - 127.0.0.1:3307:3306
+    volumes:
+      - document_analysis_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-udocument_demo", "-p${MYSQL_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+    mem_limit: 512m
+
+  api:
+    build: .
+    container_name: ai-document-analysis-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: mysql+pymysql://document_demo:${MYSQL_PASSWORD}@mysql:3306/document_analysis
+      UPLOAD_DIR: /data/uploads
+      REPORT_DIR: /data/reports
+      STATIC_DIR: /static
+      CORS_ORIGINS: http://1.13.195.57:28080
+    ports:
+      - 0.0.0.0:28080:8000
+    volumes:
+      - document_analysis_uploads:/data/uploads
+      - document_analysis_reports:/data/reports
+      - /opt/factory-dashboard:/static:ro
+    depends_on:
+      mysql:
+        condition: service_healthy
+    mem_limit: 384m
+
+volumes:
+  document_analysis_mysql:
+  document_analysis_uploads:
+  document_analysis_reports:
+
+networks:
+  default:
+    external: true
+    name: ai-document-analysis-net

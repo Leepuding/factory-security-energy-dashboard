@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0a4158"/>
+      <stop offset=".48" stop-color="#1f4738"/>
+      <stop offset="1" stop-color="#1c2d25"/>
+    </linearGradient>
+    <linearGradient id="areaGreen" x1="0" x2="1">
+      <stop offset="0" stop-color="#56683c" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#374b32" stop-opacity=".86"/>
+    </linearGradient>
+    <linearGradient id="areaBlue" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b5676" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#0a3658" stop-opacity=".82"/>
+    </linearGradient>
+    <linearGradient id="tagGreen" x1="0" x2="1">
+      <stop offset="0" stop-color="#0a6a45"/>
+      <stop offset=".52" stop-color="#12d79a"/>
+      <stop offset="1" stop-color="#0a6a45"/>
+    </linearGradient>
+    <linearGradient id="tagWarn" x1="0" x2="1">
+      <stop offset="0" stop-color="#7a3226"/>
+      <stop offset=".52" stop-color="#ff8b3a"/>
+      <stop offset="1" stop-color="#7a3226"/>
+    </linearGradient>
+    <linearGradient id="machine" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#edf6f8"/>
+      <stop offset=".18" stop-color="#d2e4e8"/>
+      <stop offset=".22" stop-color="#798b94"/>
+      <stop offset="1" stop-color="#b9cbd1"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#6fffe2" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="18" markerHeight="16" refX="15" refY="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 17 8 1 15 5 8Z" fill="#ffd451"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <rect width="1600" height="760" fill="url(#grid)"/>
+  <rect x="16" y="16" width="1568" height="728" fill="none" stroke="#72ffe7" stroke-opacity=".32"/>
+
+  <g opacity=".96">
+    <rect x="34" y="40" width="660" height="260" fill="url(#areaGreen)" stroke="#c7d793" stroke-opacity=".45"/>
+    <text x="652" y="78" fill="#cdeedb" opacity=".72" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="24" text-anchor="end">A线 注塑单元</text>
+    <rect x="710" y="40" width="850" height="260" fill="url(#areaBlue)" stroke="#72c9ff" stroke-opacity=".42"/>
+    <text x="1496" y="78" fill="#cdeeff" opacity=".74" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="24" text-anchor="end">B线 装配单元</text>
+    <rect x="34" y="318" width="1526" height="118" fill="#42553a" fill-opacity=".64" stroke="#e5dfa1" stroke-opacity=".34" stroke-dasharray="18 10"/>
+    <text x="797" y="386" fill="#e5dfa1" opacity=".72" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="30" text-anchor="middle">主物流通道</text>
+    <rect x="34" y="466" width="1526" height="250" fill="#2c3f32" fill-opacity=".74" stroke="#c7d793" stroke-opacity=".34"/>
+    <text x="1494" y="508" fill="#cdeedb" opacity=".7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="24" text-anchor="end">C线 测试包装单元</text>
+  </g>
+
+  <g stroke="#ffd451" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 18" marker-end="url(#arrow)" filter="url(#glow)" opacity=".88">
+    <path d="M260 357H520"/>
+    <path d="M550 357H800"/>
+    <path d="M830 357H1110"/>
+    <path d="M1138 357H1350"/>
+    <path d="M1234 430V512"/>
+    <path d="M1160 600H890"/>
+    <path d="M850 600H570"/>
+    <path d="M530 600H310"/>
+  </g>
+
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <g transform="translate(78 108)">
+      <rect x="0" y="0" width="220" height="150" rx="2" fill="url(#machine)" stroke="#d9eef3" stroke-width="3"/>
+      <rect x="10" y="10" width="200" height="24" fill="#71858e"/>
+      <rect x="20" y="48" width="70" height="62" rx="8" fill="none" stroke="#263943" stroke-width="13"/>
+      <rect x="118" y="50" width="76" height="60" rx="6" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="55" cy="78" r="22" fill="none" stroke="#39f7b5" stroke-width="8" filter="url(#glow)"/>
+      <rect x="28" y="122" width="164" height="13" fill="#253844"/>
+      <path d="M110 -30V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="22" y="-58" width="176" height="38" rx="18" fill="url(#tagGreen)" filter="url(#glow)"/>
+      <text x="110" y="-31" fill="#eaffff" font-size="31" font-weight="700" text-anchor="middle">0001JC</text>
+      <text x="110" y="184" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">1.领料上线工位</text>
+      <text x="110" y="216" fill="#99ffc9" font-size="23" font-weight="700" text-anchor="middle">81% 正常</text>
+    </g>
+
+    <g transform="translate(360 96)">
+      <rect x="0" y="0" width="250" height="172" rx="2" fill="url(#machine)" stroke="#d9eef3" stroke-width="3"/>
+      <rect x="12" y="12" width="226" height="27" fill="#71858e"/>
+      <rect x="30" y="58" width="76" height="70" rx="9" fill="none" stroke="#263943" stroke-width="14"/>
+      <rect x="135" y="58" width="84" height="70" rx="6" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="68" cy="92" r="24" fill="none" stroke="#39f7b5" stroke-width="8" filter="url(#glow)"/>
+      <rect x="35" y="142" width="180" height="14" fill="#253844"/>
+      <path d="M125 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="32" y="-58" width="186" height="38" rx="18" fill="url(#tagGreen)" filter="url(#glow)"/>
+      <text x="125" y="-31" fill="#eaffff" font-size="31" font-weight="700" text-anchor="middle">0002JC</text>
+      <text x="125" y="205" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">2.注塑成型机</text>
+      <text x="125" y="237" fill="#99ffc9" font-size="23" font-weight="700" text-anchor="middle">83% 正常</text>
+    </g>
+
+    <g transform="translate(780 102)">
+      <rect x="0" y="0" width="236" height="166" rx="2" fill="url(#machine)" stroke="#d9eef3" stroke-width="3"/>
+      <rect x="12" y="12" width="212" height="26" fill="#71858e"/>
+      <rect x="28" y="56" width="72" height="66" rx="9" fill="none" stroke="#263943" stroke-width="13"/>
+      <rect x="130" y="56" width="78" height="66" rx="6" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="64" cy="89" r="23" fill="none" stroke="#39f7b5" stroke-width="8" filter="url(#glow)"/>
+      <rect x="32" y="136" width="172" height="14" fill="#253844"/>
+      <path d="M118 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="24" y="-58" width="188" height="38" rx="18" fill="url(#tagGreen)" filter="url(#glow)"/>
+      <text x="118" y="-31" fill="#eaffff" font-size="31" font-weight="700" text-anchor="middle">0071JC</text>
+      <text x="118" y="198" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">3.冷却定型工位</text>
+      <text x="118" y="230" fill="#99ffc9" font-size="23" font-weight="700" text-anchor="middle">82% 正常</text>
+    </g>
+
+    <g transform="translate(1150 96)">
+      <rect x="0" y="0" width="250" height="176" rx="2" fill="url(#machine)" stroke="#ffb778" stroke-width="3"/>
+      <rect x="12" y="12" width="226" height="28" fill="#71858e"/>
+      <rect x="31" y="60" width="77" height="72" rx="9" fill="none" stroke="#263943" stroke-width="14"/>
+      <rect x="136" y="60" width="84" height="72" rx="6" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="70" cy="96" r="24" fill="none" stroke="#ff9f32" stroke-width="8" filter="url(#glow)"/>
+      <rect x="35" y="146" width="180" height="14" fill="#253844"/>
+      <path d="M125 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="32" y="-58" width="186" height="38" rx="18" fill="url(#tagWarn)" filter="url(#glow)"/>
+      <text x="125" y="-31" fill="#fff9e8" font-size="31" font-weight="700" text-anchor="middle">0004JC</text>
+      <text x="125" y="210" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">4.精密装配工位</text>
+      <text x="125" y="242" fill="#ffcb87" font-size="23" font-weight="700" text-anchor="middle">67% 关注</text>
+    </g>
+
+    <g transform="translate(1090 512)">
+      <rect x="0" y="0" width="228" height="134" rx="2" fill="url(#machine)" stroke="#ffb778" stroke-width="3"/>
+      <rect x="14" y="13" width="200" height="24" fill="#71858e"/>
+      <rect x="54" y="48" width="120" height="54" rx="10" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="114" cy="74" r="23" fill="none" stroke="#ff9f32" stroke-width="7" filter="url(#glow)"/>
+      <path d="M114 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="24" y="-58" width="180" height="38" rx="18" fill="url(#tagWarn)" filter="url(#glow)"/>
+      <text x="114" y="-31" fill="#fff9e8" font-size="30" font-weight="700" text-anchor="middle">0007YL</text>
+      <text x="114" y="166" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">5.功能测试台</text>
+      <text x="114" y="198" fill="#ffcb87" font-size="23" font-weight="700" text-anchor="middle">64% 排队</text>
+    </g>
+
+    <g transform="translate(682 512)">
+      <rect x="0" y="0" width="238" height="134" rx="2" fill="url(#machine)" stroke="#d9eef3" stroke-width="3"/>
+      <rect x="14" y="13" width="210" height="24" fill="#71858e"/>
+      <rect x="60" y="48" width="118" height="54" rx="10" fill="#dcebed" stroke="#90a6ae"/>
+      <circle cx="119" cy="74" r="23" fill="none" stroke="#39f7b5" stroke-width="7" filter="url(#glow)"/>
+      <path d="M119 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="28" y="-58" width="182" height="38" rx="18" fill="url(#tagGreen)" filter="url(#glow)"/>
+      <text x="119" y="-31" fill="#eaffff" font-size="30" font-weight="700" text-anchor="middle">0008YL</text>
+      <text x="119" y="166" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">6.外观检验台</text>
+      <text x="119" y="198" fill="#99ffc9" font-size="23" font-weight="700" text-anchor="middle">63% 正常</text>
+    </g>
+
+    <g transform="translate(230 512)">
+      <rect x="0" y="0" width="246" height="134" rx="2" fill="url(#machine)" stroke="#ffb778" stroke-width="3"/>
+      <rect x="16" y="13" width="214" height="24" fill="#71858e"/>
+      <rect x="54" y="52" width="138" height="42" rx="6" fill="#657781"/>
+      <rect x="76" y="64" width="94" height="18" fill="#39f7b5" opacity=".6" filter="url(#glow)"/>
+      <path d="M123 -28V0" stroke="#f4d74c" stroke-width="3"/>
+      <rect x="31" y="-58" width="184" height="38" rx="18" fill="url(#tagWarn)" filter="url(#glow)"/>
+      <text x="123" y="-31" fill="#fff9e8" font-size="30" font-weight="700" text-anchor="middle">0009YL</text>
+      <text x="123" y="166" fill="#ffd451" font-size="27" font-weight="700" text-anchor="middle">7.包装入库工位</text>
+      <text x="123" y="198" fill="#ffcb87" font-size="23" font-weight="700" text-anchor="middle">59% 待提速</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, 'Microsoft YaHei', sans-serif">
+    <rect x="48" y="690" width="420" height="36" fill="#031623" fill-opacity=".68" stroke="#72ffe7" stroke-opacity=".28"/>
+    <text x="68" y="714" fill="#a9d6e8" font-size="20">当前瓶颈：</text>
+    <text x="170" y="714" fill="#ffd451" font-size="20" font-weight="700">0004JC 精密装配 / 0007YL 功能测试</text>
+    <rect x="508" y="690" width="270" height="36" fill="#031623" fill-opacity=".68" stroke="#72ffe7" stroke-opacity=".28"/>
+    <text x="528" y="714" fill="#a9d6e8" font-size="20">在制队列：</text>
+    <text x="628" y="714" fill="#eaffff" font-size="20" font-weight="700">装配126件 · 测试46件</text>
+    <rect x="818" y="690" width="250" height="36" fill="#031623" fill-opacity=".68" stroke="#72ffe7" stroke-opacity=".28"/>
+    <text x="838" y="714" fill="#a9d6e8" font-size="20">预计入库：</text>
+    <text x="938" y="714" fill="#eaffff" font-size="20" font-weight="700">18:30前398件</text>
+    <g transform="translate(1250 692)">
+      <rect width="280" height="34" fill="#031623" fill-opacity=".72" stroke="#72ffe7" stroke-opacity=".28"/>
+      <rect x="18" y="11" width="24" height="12" fill="#12d79a"/>
+      <text x="50" y="23" fill="#cdeedb" font-size="17">正常</text>
+      <rect x="108" y="11" width="24" height="12" fill="#ff8b3a"/>
+      <text x="140" y="23" fill="#cdeedb" font-size="17">关注/排队</text>
+    </g>
+  </g>
+</svg>

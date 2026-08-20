@@ -5,14 +5,21 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "dev:api": "python3.11 -m uvicorn server.app.main:app --reload --host 127.0.0.1 --port 8000",
+    "dev:no-agent": "VITE_ENABLE_FLOATING_AGENT=false vite --host 127.0.0.1",
     "build": "vite build",
+    "build:agent": "vite build --outDir dist-agent",
+    "build:no-agent": "VITE_ENABLE_FLOATING_AGENT=false vite build --outDir dist-no-agent",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
+    "axios": "^1.18.1",
     "echarts": "^5.6.0",
+    "element-plus": "^2.14.3",
+    "pinia": "^3.0.4",
+    "three": "^0.166.1",
     "vite": "^6.3.5",
     "vue": "^3.5.13"
-  },
-  "devDependencies": {}
+  }
 }
